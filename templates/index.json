@@ -479,6 +479,7 @@
       "block_order": [
         "instafeed_app_block_enYPAK"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "space_around": true

@@ -1,19 +1,4 @@
-{%- render 'section-hero-video',
-    section: section,
-    full_width: section.settings.full_width,
-    height_mobile: section.settings.height_mobile,
-    title_size: section.settings.title_size,
-    height: section.settings.height,
-    color_accent: section.settings.color_accent,
-    overlay_opacity: section.settings.overlay_opacity,
-    video_url: section.settings.video_url,
-    text_align: section.settings.text_align,
-    title: section.settings.title,
-    subheading: section.settings.subheading,
-    link: section.settings.link,
-    link_text: section.settings.link_text,
-    hydration: 'on:visible'
--%}
+{%- render 'section-hero-video' -%}
 
 {% schema %}
 {
@@ -98,11 +83,16 @@
       ]
     },
     {
-      "type": "text",
+      "type": "video",
+      "id": "video",
+      "label": "t:labels.video",
+      "info": "t:info.overrides_video_url_if_both_set"
+    },
+    {
+      "type": "video_url",
       "id": "video_url",
-      "label": "t:labels.background_video_link",
-      "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-      "info": "t:info.supported_video_formats"
+      "label": "t:labels.video_url",
+      "accept": ["youtube", "vimeo"]
     },
     {
       "type": "range",

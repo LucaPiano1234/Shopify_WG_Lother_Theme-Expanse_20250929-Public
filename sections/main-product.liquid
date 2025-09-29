@@ -1,41 +1,54 @@
-{%- render 'section-main-product',
-  section: section,
-  template: template,
-  isModal: false,
-  isAjax: false,
-  product: product,
-  sku_enable: section.settings.sku_enable,
-  image_position: section.settings.image_position,
-  image_container_size: section.settings.image_container_size,
-  product_image_size: section.settings.product_image_size,
-  product_zoom_enable: section.settings.product_zoom_enable,
-  thumbnail_position: section.settings.thumbnail_position,
-  thumbnail_height: section.settings.thumbnail_height,
-  thumbnail_arrows: section.settings.thumbnail_arrows,
-  mobile_layout: section.settings.mobile_layout,
-  enable_video_looping: section.settings.enable_video_looping,
-  product_video_style: section.settings.product_video_style,
-  context: 'main-product',
-  superscript_decimals: settings.superscript_decimals,
-  share_facebook: settings.share_facebook,
-  share_twitter: settings.share_twitter,
-  share_pinterest: settings.share_pinterest,
-  show_breadcrumbs: settings.show_breadcrumbs,
-  show_breadcrumbs_collection_link: settings.show_breadcrumbs_collection_link,
-  vendor_enable: settings.vendor_enable,
-  product_save_amount: settings.product_save_amount,
-  product_save_type: settings.product_save_type,
+{%- liquid
+  capture blocks
+    for block in section.blocks
+      case block.type
+        when '@app'
+          render block
+        when 'title'
+          render 'block-title', block: block
+        when 'description'
+          render 'block-description', block: block
+        when 'variant_picker'
+          render 'block-variant-picker', block: block, forloop: forloop
+        when 'buy_buttons'
+          render 'block-buy-buttons', block: block
+        when 'price'
+          render 'block-price', block: block
+        when 'quantity_selector'
+          render 'block-quantity-selector', block: block
+        when 'inventory_status'
+          render 'product-inventory', block: block
+        when 'complementary_products'
+          render 'product-complementary', block: block
+        when 'sales_point'
+          render 'block-sales-point', block: block
+        when 'size_chart'
+          render 'block-size-chart', block: block, forloop: forloop
+         when 'text'
+          render 'block-text', block: block
+        when 'trust_badge'
+          render 'block-trust-badge', block: block
+        when 'tab'
+          render 'block-tab', block: block
+        when 'separator'
+          render 'block-separator', block: block
+        when 'contact'
+          render 'block-contact', block: block
+        when 'custom'
+          render 'block-custom', block: block
+        when 'share'
+          render 'block-share', block: block
+      endcase
+    endfor
+  endcapture
 -%}
+
+{% render 'section-main-product', slot: blocks %}
 
 {% schema %}
 {
   "name": "t:labels.product",
   "settings": [
-    {
-      "type": "checkbox",
-      "id": "sku_enable",
-      "label": "t:actions.show_sku"
-    },
     {
       "type": "header",
       "content": "t:labels.media"
@@ -193,95 +206,19 @@
       "type": "@app"
     },
     {
-      "type": "price",
-      "name": "t:labels.price",
-      "limit": 1
-    },
-    {
-      "type": "quantity_selector",
-      "name": "t:labels.quantity_selector",
-      "limit": 1
-    },
-    {
-      "type": "complementary_products",
-      "name": "Complementary products",
+      "type": "title",
+      "name": "t:labels.title",
       "limit": 1,
       "settings": [
         {
-          "type": "paragraph",
-          "content": "t:info.to_select_complementary_add_search_discovery"
+          "type": "checkbox",
+          "id": "vendor_enable",
+          "label": "t:actions.show_vendor"
         },
         {
-          "type": "text",
-          "id": "product_complementary_heading",
-          "label": "t:labels.heading",
-          "default": "Pairs well with"
-        },
-        {
-          "type": "range",
-          "id": "complementary_count",
-          "label": "t:labels.max_products_to",
-          "default": 4,
-          "min": 2,
-          "max": 10,
-          "step": 1
-        },
-        {
-          "type": "range",
-          "id": "per_slide",
-          "label": "t:labels.number_of_products",
-          "default": 2,
-          "min": 2,
-          "max": 4,
-          "step": 1
-        },
-        {
-          "type": "select",
-          "id": "control_type",
-          "label": "t:labels.pagination_type",
-          "options": [
-            {
-              "value": "dots",
-              "label": "t:labels.dots"
-            },
-            {
-              "value": "arrows",
-              "label": "t:labels.arrows"
-            }
-          ],
-          "default": "dots"
-        },
-        {
-          "type": "header",
-          "content": "t:labels.product_card"
-        },
-        {
-          "type": "select",
-          "id": "image_style",
-          "label": "t:labels.image_style",
-          "options": [
-            {
-              "value": "default",
-              "label": "t:labels.default"
-            },
-            {
-              "value": "circle",
-              "label": "t:labels.circle"
-            }
-          ],
-          "default": "default"
-        }
-      ]
-    },
-    {
-      "type": "size_chart",
-      "name": "t:labels.size_chart",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "page",
-          "id": "size_chart",
-          "label": "t:labels.size_chart_page"
+          "type": "checkbox",
+          "id": "sku_enable",
+          "label": "t:actions.show_sku"
         }
       ]
     },
@@ -390,6 +327,87 @@
       ]
     },
     {
+      "type": "price",
+      "name": "t:labels.price",
+      "limit": 1
+    },
+    {
+      "type": "quantity_selector",
+      "name": "t:labels.quantity_selector",
+      "limit": 1
+    },
+    {
+      "type": "complementary_products",
+      "name": "Complementary products",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "t:info.to_select_complementary_add_search_discovery"
+        },
+        {
+          "type": "text",
+          "id": "product_complementary_heading",
+          "label": "t:labels.heading",
+          "default": "Pairs well with"
+        },
+        {
+          "type": "range",
+          "id": "complementary_count",
+          "label": "t:labels.max_products_to",
+          "default": 4,
+          "min": 2,
+          "max": 10,
+          "step": 1
+        },
+        {
+          "type": "range",
+          "id": "per_slide",
+          "label": "t:labels.number_of_products",
+          "default": 2,
+          "min": 2,
+          "max": 4,
+          "step": 1
+        },
+        {
+          "type": "select",
+          "id": "control_type",
+          "label": "t:labels.pagination_type",
+          "options": [
+            {
+              "value": "dots",
+              "label": "t:labels.dots"
+            },
+            {
+              "value": "arrows",
+              "label": "t:labels.arrows"
+            }
+          ],
+          "default": "dots"
+        },
+        {
+          "type": "header",
+          "content": "t:labels.product_card"
+        },
+        {
+          "type": "select",
+          "id": "image_style",
+          "label": "t:labels.image_style",
+          "options": [
+            {
+              "value": "default",
+              "label": "t:labels.default"
+            },
+            {
+              "value": "circle",
+              "label": "t:labels.circle"
+            }
+          ],
+          "default": "default"
+        }
+      ]
+    },
+    {
       "type": "sales_point",
       "name": "t:labels.sales_point",
       "settings": [
@@ -458,6 +476,18 @@
       ]
     },
     {
+      "type": "size_chart",
+      "name": "t:labels.size_chart",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "page",
+          "id": "size_chart",
+          "label": "t:labels.size_chart_page"
+        }
+      ]
+    },
+    {
       "type": "text",
       "name": "t:labels.text",
       "settings": [
@@ -504,17 +534,6 @@
       ]
     },
     {
-      "type": "share",
-      "name": "t:actions.share_on_social",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "paragraph",
-          "content": "t:info.choose_which_platforms_share_theme_settings"
-        }
-      ]
-    },
-    {
       "type": "separator",
       "name": "t:labels.separator"
     },
@@ -550,6 +569,17 @@
           "label": "t:labels.html",
           "default": "<h4>Custom code block</h4><p>Use this advanced section to add custom HTML, app scripts, or liquid.</p>",
           "info": "t:labels.supports_liquid"
+        }
+      ]
+    },
+    {
+      "type": "share",
+      "name": "t:actions.share_on_social",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "t:info.choose_which_platforms_share_theme_settings"
         }
       ]
     }

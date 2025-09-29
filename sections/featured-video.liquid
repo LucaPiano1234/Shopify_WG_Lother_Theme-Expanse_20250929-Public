@@ -1,10 +1,4 @@
-{%- render 'section-featured-video',
-    section: section,
-    divider: section.settings.divider,
-    title: section.settings.title,
-    video_url: section.settings.video_url,
-    color_button: settings.color_button
--%}
+{%- render 'section-featured-video' -%}
 
 {% schema %}
 {
@@ -17,14 +11,17 @@
       "label": "t:labels.heading"
     },
     {
+      "type": "video",
+      "id": "video",
+      "label": "t:labels.video",
+      "info": "t:info.overrides_video_url_if_both_set"
+    },
+    {
       "type": "video_url",
       "id": "video_url",
-      "label": "t:labels.video_link",
+      "label": "t:labels.video_url",
       "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-      "accept": [
-        "youtube",
-        "vimeo"
-      ]
+      "accept": ["youtube", "vimeo"]
     },
     {
       "type": "checkbox",

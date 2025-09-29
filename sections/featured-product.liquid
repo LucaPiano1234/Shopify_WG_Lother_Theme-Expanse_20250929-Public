@@ -1,30 +1,48 @@
-{%- render 'section-featured-product',
-  section: section,
-  divider: section.settings.divider,
-  featured_product: section.settings.featured_product,
-  image_position: section.settings.image_position,
-  image_container_size: section.settings.image_container_size,
-  product_image_size: section.settings.product_image_size,
-  product_zoom_enable: section.settings.product_zoom_enable,
-  sku_enable: section.settings.sku_enable,
-  thumbnail_position: section.settings.thumbnail_position,
-  thumbnail_height: section.settings.thumbnail_height,
-  thumbnail_arrows: section.settings.thumbnail_arrows,
-  mobile_layout: section.settings.mobile_layout,
-  enable_video_looping: section.settings.enable_video_looping,
-  product_video_style: section.settings.product_video_style,
-  context: 'featured-product',
-  superscript_decimals: settings.superscript_decimals,
-  share_facebook: settings.share_facebook,
-  share_twitter: settings.share_twitter,
-  share_pinterest: settings.share_pinterest,
-  show_breadcrumbs: settings.show_breadcrumbs,
-  show_breadcrumbs_collection_link: settings.show_breadcrumbs_collection_link,
-  vendor_enable: settings.vendor_enable,
-  product_save_amount: settings.product_save_amount,
-  product_save_type: settings.product_save_type,
-  set_image_breathing_room: true,
-  product_grid_style: settings.product_grid_style,
+{%- liquid
+  capture blocks
+    for block in section.blocks
+      case block.type
+        when '@app'
+          render block
+        when 'title'
+          render 'block-title', block: block
+        when 'description'
+          render 'block-description', block: block
+        when 'variant_picker'
+          render 'block-variant-picker', block: block, forloop: forloop, update_url: false
+        when 'buy_buttons'
+          render 'block-buy-buttons', block: block
+        when 'price'
+          render 'block-price', block: block
+        when 'quantity_selector'
+          render 'block-quantity-selector', block: block
+        when 'inventory_status'
+          render 'product-inventory', block: block
+        when 'complementary_products'
+          render 'product-complementary', block: block
+        when 'sales_point'
+          render 'block-sales-point', block: block
+        when 'size_chart'
+          render 'block-size-chart', block: block, forloop: forloop
+        when 'text'
+          render 'block-text', block: block
+        when 'trust_badge'
+          render 'block-trust-badge', block: block
+        when 'tab'
+          render 'block-tab', block: block
+        when 'separator'
+          render 'block-separator', block: block
+        when 'contact'
+          render 'block-contact', block: block
+        when 'custom'
+          render 'block-custom', block: block
+        when 'share'
+          render 'block-share', block: block
+      endcase
+    endfor
+  endcapture
+
+  render 'section-featured-product', slot: blocks
 -%}
 
 {% schema %}
@@ -34,7 +52,7 @@
   "settings": [
     {
       "type": "product",
-      "id": "featured_product",
+      "id": "product",
       "label": "t:labels.product"
     },
     {
@@ -42,11 +60,6 @@
       "id": "divider",
       "label": "t:actions.show_section_divider",
       "default": false
-    },
-    {
-      "type": "checkbox",
-      "id": "sku_enable",
-      "label": "t:actions.show_sku"
     },
     {
       "type": "header",
@@ -186,6 +199,23 @@
   "blocks": [
     {
       "type": "@app"
+    },
+    {
+      "type": "title",
+      "name": "t:labels.title",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "vendor_enable",
+          "label": "t:actions.show_vendor"
+        },
+        {
+          "type": "checkbox",
+          "id": "sku_enable",
+          "label": "t:actions.show_sku"
+        }
+      ]
     },
     {
       "type": "price",
@@ -553,6 +583,12 @@
     {
       "name": "t:labels.featured_product",
       "blocks": [
+        {
+          "type": "title",
+          "settings": {
+            "vendor_enable": true
+          }
+        },
         {
           "type": "price"
         },

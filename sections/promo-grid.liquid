@@ -1,12 +1,4 @@
-{% render 'section-promo-grid',
-  section: section,
-  full_width: section.settings.full_width,
-  gutter_size: section.settings.gutter_size,
-  space_above: section.settings.space_above,
-  space_below: section.settings.space_below,
-  superscript_decimals: settings.superscript_decimals,
-  hydration: 'on:visible'
-%}
+{%- render 'section-promo-grid' -%}
 
 {% schema %}
 {
@@ -114,9 +106,10 @@
           "label": "t:labels.image"
         },
         {
-          "type": "text",
+          "type": "video_url",
           "id": "video_url",
-          "label": "t:labels.video_url"
+          "label": "t:labels.video_url",
+          "accept": ["youtube", "vimeo"]
         },
         {
           "type": "header",

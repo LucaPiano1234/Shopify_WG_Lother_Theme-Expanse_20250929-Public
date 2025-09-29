@@ -1,12 +1,5 @@
 <div class="page-width">
-  {% render 'section-advanced-accordion',
-    section: section,
-    title: section.settings.title,
-    per_row: section.settings.per_row,
-    two_per_row_mobile: section.settings.two_per_row_mobile,
-    opened: section.settings.opened,
-    disabled: section.settings.disabled
-  %}
+  {%- render 'section-advanced-accordion' -%}
 </div>
 
 {% schema %}

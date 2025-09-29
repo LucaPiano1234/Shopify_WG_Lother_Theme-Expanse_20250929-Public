@@ -1,12 +1,20 @@
-{% comment %}
-  /**
-  * @param {object} product - product object
-  * @param {string} scheme - color scheme for the tag
-  * @param {string} style - style of the tag
-  */
-{% endcomment %}
+{% # components v3.0.1 | Copyright © 2024 Archetype Themes Limited Partnership  | "Shopify Theme Store (https://www.shopify.com/legal/terms#9-additional-services)" License  %}
+{%- comment -%}
+  Renders a product's tags.
+
+  Accepts:
+  - product {product} - The product object
+  - scheme {string} - The color scheme of the product tags
+  - style {string} - The style of the product tags
+
+  Usage:
+  {% render 'product-tags' %}
+{%- endcomment -%}
 
 {% liquid
+  assign product = section.settings.product | default: product
+
+  assign product_tags_count = 0
   assign scheme = scheme | default: settings.product_tag_scheme
   assign style = style | default: settings.product_tag_style
   assign product_tags = ''
@@ -14,6 +22,7 @@
   for tag in product.tags
     if tag contains 'at_'
       assign product_tags = product_tags | append: tag | append: ','
+      assign product_tags_count = product_tags_count | plus: 1
     endif
   endfor
 
@@ -26,24 +35,25 @@
   If the prefix is 'at' then render the tag
 {% endcomment %}
 
-<div class="product-tags">
-{% for tag in product_tags_array %}
-  {% assign formatted_tag = tag | remove_first: 'at_' %}
+{% if product_tags_count > 0 %}
+  <div class="product-tags">
+    {% for tag in product_tags_array %}
+      {% assign formatted_tag = tag | remove_first: 'at_' %}
 
-  {% assign tag_id = formatted_tag | strip %}
-  {% assign tag_text = 'tags.' | append: tag_id | replace: '-', '_' | t %}
+      {% assign tag_id = formatted_tag | strip %}
+      {% assign tag_text = 'tags.' | append: tag_id | replace: '-', '_' | t %}
 
-  {% unless tag_text contains 'Translation missing' %}
-    <div
-      class="product-tag product-tag--style-{{ style }} product-tag--{{ scheme }} {% if is_product_tag %}product-tag--has-link{%  endif %}"
-      data-tag-string="{{ tag }}"
-    >
-      <a href="{{ routes.all_products_collection_url }}/{{ tag | handleize }}">
-        {%  if tag_id != 'none' %}
-          {% render 'icon', name: tag_id  %} <span class="product-tag__text">{{ tag_text | capitalize }}</span>
-        {%  endif %}
-      </a>
-    </div>
-  {%  endunless %}
-{% endfor %}
-</div>
+      {% unless tag_text contains 'Translation missing' %}
+        <div
+          class="product-tag product-tag--style-{{ style }} product-tag--{{ scheme }} {% if is_product_tag %}product-tag--has-link{%  endif %}"
+          data-tag-string="{{ tag }}"
+        >
+          <a href="{{ routes.all_products_collection_url }}/{{ tag | handleize }}">
+            {% render 'icon', name: tag_id %}
+            <span class="product-tag__text">{{ tag_text | capitalize }}</span>
+          </a>
+        </div>
+      {% endunless %}
+    {% endfor %}
+  </div>
+{% endif %}

@@ -1,75 +1,73 @@
-// This is the javascript entrypoint for the newsletter-reminder snippet.
-// This file and all its inclusions will be processed through esbuild
+import Modals from '@archetype-themes/modules/modal'
+import { HTMLThemeElement } from '@archetype-themes/custom-elements/theme-element'
+import { setLocalStorage, getLocalStorage } from '@archetype-themes/utils/storage'
 
-import Cookies from 'js-cookie';
-import '@archetype-themes/scripts/config';
-import '@archetype-themes/scripts/modules/modal';
-
-/*============================================================================
-  NewsletterReminder
-==============================================================================*/
-
-class NewsletterReminder extends HTMLElement {
+class NewsletterReminder extends HTMLThemeElement {
   constructor() {
-    super();
-    this.closeBtn = this.querySelector('[data-close-button]');
-    this.popupTrigger = this.querySelector('[data-message]');
+    super()
+    this.closeBtn = this.querySelector('[data-close-button]')
+    this.popupTrigger = this.querySelector('[data-message]')
 
-    this.id = this.dataset.sectionId;
-    this.newsletterId = `NewsletterPopup-${ this.id }`;
-    this.cookie = Cookies.get(`newsletter-${this.id}`);
-    this.cookieName = `newsletter-${this.id}`;
-    this.secondsBeforeShow = this.dataset.delaySeconds;
-    this.expiry = parseInt(this.dataset.delayDays);
-    this.modal = new theme.Modals(`NewsletterPopup-${this.newsletterId}`, 'newsletter-popup-modal');
+    this.newsletterId = `NewsletterPopup-${this.sectionId}`
+    this.storageKey = `newsletter-${this.sectionId}`
+    this.secondsBeforeShow = this.dataset.delaySeconds
+    this.expiry = parseInt(this.dataset.delayDays)
+    this.modal = new Modals(`NewsletterPopup-${this.newsletterId}`, 'newsletter-popup-modal')
 
-    this.init();
+    this.init()
+  }
+
+  connectedCallback() {
+    super.connectedCallback()
+    this.style.display = 'block'
   }
 
   init() {
-    document.addEventListener('shopify:block:select', (evt) => {
-      if (evt.detail.sectionId === this.id) {
-        this.show(0, true)
-      }
-    });
-
-    document.addEventListener('shopify:block:deselect', (evt) => {
-      if (evt.detail.sectionId === this.id) {
-        this.hide();
-      }
-    });
-
-    document.addEventListener(`modalOpen.${this.newsletterId}`, () => this.hide());
-    document.addEventListener(`modalClose.${this.newsletterId}`, () => this.show());
-    document.addEventListener(`newsletter:openReminder`, () => this.show(0));
+    document.addEventListener(`modalOpen.${this.newsletterId}`, () => this.hide())
+    document.addEventListener(`modalClose.${this.newsletterId}`, () => this.show())
+    document.addEventListener(`newsletter:openReminder`, () => this.show(0))
 
     this.closeBtn.addEventListener('click', () => {
-      this.hide();
-      Cookies.set(this.cookieName, 'opened', { path: '/', expires: this.expiry });
-    });
+      this.hide()
+      setLocalStorage(this.storageKey, 'opened', this.expiry)
+    })
 
     this.popupTrigger.addEventListener('click', () => {
-      const reminderOpen = new CustomEvent('reminder:openNewsletter', { bubbles: true });
-      this.dispatchEvent(reminderOpen);
+      const reminderOpen = new CustomEvent('reminder:openNewsletter', { bubbles: true })
+      this.dispatchEvent(reminderOpen)
+      this.hide()
+    })
 
-      this.hide();
-    });
+    this.checkAndShowReminder()
   }
 
-  show(time = this.secondsBeforeShow, forceOpen = false) {
-    const reminderAppeared = (sessionStorage.getItem('reminderAppeared') === 'true');
+  checkAndShowReminder() {
+    const storedValue = getLocalStorage(this.storageKey)
+    if (storedValue === 'opened' && !sessionStorage.getItem('reminderShownThisSession')) {
+      this.show(this.secondsBeforeShow)
+    }
+  }
 
-    if (!reminderAppeared || forceOpen) {
+  show(time = 0, forceOpen = false) {
+    if (forceOpen || !sessionStorage.getItem('reminderShownThisSession')) {
       setTimeout(() => {
-        this.dataset.enabled = 'true';
-        sessionStorage.setItem('reminderAppeared', true);
-      }, time * 1000);
+        this.dataset.enabled = 'true'
+        sessionStorage.setItem('reminderShownThisSession', 'true')
+      }, time * 1000)
     }
   }
 
   hide() {
-    this.dataset.enabled = 'false';
+    this.dataset.enabled = 'false'
+  }
+
+  onBlockSelect() {
+    this.show(0, true)
+  }
+
+  onBlockDeselect() {
+    this.hide()
   }
 }
 
-customElements.define('newsletter-reminder', NewsletterReminder);
+customElements.define('newsletter-reminder', NewsletterReminder)

@@ -1,34 +1,62 @@
-{% comment %}
-  /**
-    /**
-     * @param {string} section_id - The section ID
-     * @param {string} snippet_context - The context of the snippet
-     * @param {object} customer - The customer object
-     */
-  */
-{% endcomment %}
+{% # components v3.0.1 | Copyright © 2024 Archetype Themes Limited Partnership  | "Shopify Theme Store (https://www.shopify.com/legal/terms#9-additional-services)" License  %}
+{%- comment -%}
+  Renders a newsletter form.
 
-{%- assign newsletter_form_id = 'newsletter-' | append: section_id -%}
+  Accepts:
+  - context {string} - The context in which the form is rendered
+
+  Usage:
+  {% render 'newsletter-form', context: 'footer' %}
+{%- endcomment -%}
+
+{%- liquid
+  assign newsletter_form_id = 'newsletter-' | append: section.id
+-%}
+
 {% form 'customer', id: newsletter_form_id %}
   {%- if form.posted_successfully? -%}
     <div class="note note--success">
-      {{ 'info.newsletter_success' | t }}
+      {% render 't_with_fallback', key: 'info.newsletter_success', fallback: 'Thanks for subscribing' %}
     </div>
   {%- endif -%}
-  {%- if form.errors and form.context == snippet_context -%}
+  {%- if form.errors and form.context == context -%}
     {{ form.errors | default_errors }}
   {%- endif -%}
 
   {%- unless form.posted_successfully? -%}
-    <label for="Email-{{ section_id }}" class="visually-hidden">{{ 'actions.enter_email' | t }}</label>
-    <label for="newsletter-form-submit-{{ section_id }}" class="visually-hidden">{{ 'actions.subscribe' | t }}</label>
+    <label for="Email-{{ section.id }}" class="visually-hidden">
+      {% render 't_with_fallback', key: 'actions.enter_email', fallback: 'Enter email' -%}
+    </label>
+    <label for="newsletter-form-submit-{{ section.id }}" class="visually-hidden">
+      {% render 't_with_fallback', key: 'actions.subscribe', fallback: 'Subscribe' -%}
+    </label>
     <input type="hidden" name="contact[tags]" value="prospect,newsletter">
-    <input type="hidden" name="contact[context]" value="{{ snippet_context }}">
+    <input type="hidden" name="contact[context]" value="{{ context }}">
     <div class="input-group newsletter__input-group">
-      <input type="email" value="{% if customer %}{{ customer.email }}{% endif %}" placeholder="{{ 'actions.enter_email' | t }}" name="contact[email]" id="Email-{{ section_id }}" class="input-group-field newsletter__input" autocorrect="off" autocapitalize="off" required>
+      <input
+        type="email"
+        value="{% if customer %}{{ customer.email }}{% endif %}"
+        placeholder="{% render 't_with_fallback', key: 'actions.enter_email', fallback: 'Enter your email' -%}"
+        name="contact[email]"
+        id="Email-{{ section.id }}"
+        class="input-group-field newsletter__input"
+        autocorrect="off"
+        autocapitalize="off"
+        required
+      >
       <div class="input-group-btn">
-        <button type="submit" id="newsletter-form-submit-{{ section_id }}" class="btn" name="commit" aria-label="{{ 'actions.subscribe' | t }}">
-          <span class="form__submit--large">{{ 'actions.subscribe' | t }}</span>
+        <button
+          type="submit"
+          id="newsletter-form-submit-{{ section.id }}"
+          class="btn"
+          name="commit"
+          aria-label="
+            {% render 't_with_fallback', key: 'actions.subscribe', fallback: 'Subscribe' -%}
+          "
+        >
+          <span class="form__submit--large">
+            {% render 't_with_fallback', key: 'actions.subscribe', fallback: 'Subscribe' -%}
+          </span>
           <span class="form__submit--small">
             {% render 'icon', name: 'arrow-right' %}
           </span>

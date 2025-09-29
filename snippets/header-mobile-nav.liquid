@@ -1,11 +1,22 @@
-{% comment %}
-  /**
-    * @param {object} main_menu - The main menu object
-    * @param {string} text_direction - text direction
-  */
-{% endcomment %}
+{% # components v3.0.1 | Copyright © 2024 Archetype Themes Limited Partnership  | "Shopify Theme Store (https://www.shopify.com/legal/terms#9-additional-services)" License  %}
+{%- comment -%}
+  Renders the mobile header navigation.
+
+  Accepts:
+  - container {string} - The container ID
+  - main_menu {linklist} - The main menu object
+  - text_direction {string} - The text direction of the store
+  - in_header {boolean} - Whether the mobile nav is in the header
+
+  Usage:
+  {% render 'header-mobile-nav', container: 'MobileNav' %}
+{%- endcomment -%}
 
 {%- liquid
+  assign main_menu = main_menu | default: section.settings.main_menu_link_list
+  assign text_direction = text_direction | default: settings.text_direction
+  assign in_header = in_header | default: false, allow_false: true
+
   if text_direction == 'rtl'
     assign chevron_icon = 'chevron-left'
   else
@@ -13,7 +24,13 @@
   endif
 -%}
 
-<div class="slide-nav__wrapper overlay" data-level="1">
+<mobile-nav
+  class="slide-nav__wrapper overlay"
+  data-level="1"
+  container="{{ container }}"
+  inHeader="{{ in_header }}"
+  defer-hydration
+>
   <ul class="slide-nav">
     {%- for link in main_menu.links -%}
       {%- liquid
@@ -46,27 +63,36 @@
 
       <li class="slide-nav__item">
         {%- if link.levels > 0 -%}
-          <button type="button"
+          <button
+            type="button"
             class="slide-nav__button js-toggle-submenu"
             data-target="tier-2-{{ child_list_handle }}"
-            {% if link.active or link.child_active %}data-active="true"{% endif %}>
+            {% if link.active or link.child_active %}
+              data-active="true"
+            {% endif %}
+          >
             <span class="slide-nav__link">
               {%- if have_image -%}
                 {{ collection_image }}
               {%- endif -%}
               <span>{{ link.title }}</span>
               {% render 'icon', name: chevron_icon %}
-              <span class="icon__fallback-text visually-hidden">{{ 'actions.expand_submenu' | t }}</span>
+              <span class="icon__fallback-text visually-hidden">
+                {% render 't_with_fallback', key: 'actions.expand_submenu', fallback: 'Expand submenu' -%}
+              </span>
             </span>
           </button>
 
           <ul
             class="slide-nav__dropdown"
             data-parent="tier-2-{{ child_list_handle }}"
-            data-level="2">
+            data-level="2"
+          >
             <li class="slide-nav__item">
-              <button type="button"
-                class="slide-nav__button js-toggle-submenu">
+              <button
+                type="button"
+                class="slide-nav__button js-toggle-submenu"
+              >
                 <span class="slide-nav__link slide-nav__link--back">
                   {% render 'icon', name: chevron_icon %}
                   <span>{{ link.title }}</span>
@@ -80,7 +106,9 @@
             {%- if is_collection -%}
               <li class="slide-nav__item">
                 <a href="{{ link.url }}" class="slide-nav__link">
-                  <span>{{ 'actions.view_all' | t }}</span>
+                  <span>
+                    {% render 't_with_fallback', key: 'actions.view_all', fallback: 'View all' -%}
+                  </span>
                   {% render 'icon', name: chevron_icon %}
                 </a>
               </li>
@@ -94,23 +122,33 @@
 
               <li class="slide-nav__item">
                 {%- if childlink.levels > 0 -%}
-                  <button type="button"
+                  <button
+                    type="button"
                     class="slide-nav__button js-toggle-submenu"
                     data-target="tier-3-{{ grand_child_link_id }}"
-                    {% if link.active or link.child_active %}data-active="true"{% endif %}>
+                    {% if link.active or link.child_active %}
+                      data-active="true"
+                    {% endif %}
+                  >
                     <span class="slide-nav__link slide-nav__sublist-link">
                       <span>{{ childlink.title }}</span>
                       {% render 'icon', name: chevron_icon %}
-                      <span class="icon__fallback-text visually-hidden">{{ 'actions.expand_submenu' | t }}</span>
+                      <span class="icon__fallback-text visually-hidden">
+                        {% render 't_with_fallback', key: 'actions.expand_submenu', fallback: 'Expand submenu' -%}
+                      </span>
                     </span>
                   </button>
-                  <ul class="slide-nav__dropdown"
+                  <ul
+                    class="slide-nav__dropdown"
                     data-parent="tier-3-{{ grand_child_link_id }}"
-                    data-level="3">
+                    data-level="3"
+                  >
                     <li class="slide-nav__item">
-                      <button type="button"
+                      <button
+                        type="button"
                         class="slide-nav__button js-toggle-submenu"
-                        data-target="tier-2-{{ child_list_handle }}">
+                        data-target="tier-2-{{ child_list_handle }}"
+                      >
                         <span class="slide-nav__link slide-nav__link--back">
                           {% render 'icon', name: chevron_icon %}
                           <span>{{ childlink.title }}</span>
@@ -124,7 +162,9 @@
                     {%- if childlink.url contains '/collections/' -%}
                       <li class="slide-nav__item">
                         <a href="{{ childlink.url }}" class="slide-nav__link">
-                          <span>{{ 'actions.view_all' | t }}</span>
+                          <span>
+                            {% render 't_with_fallback', key: 'actions.view_all', fallback: 'View all' -%}
+                          </span>
                           {% render 'icon', name: chevron_icon %}
                         </a>
                       </li>
@@ -161,4 +201,8 @@
       </li>
     {%- endfor -%}
   </ul>
-</div>
+</mobile-nav>
+
+<script type="module">
+  import 'components/header-mobile-nav'
+</script>

@@ -3,7 +3,7 @@
     "name": "theme_info",
     "theme_name": "Expanse",
     "theme_author": "Archetype Themes",
-    "theme_version": "5.1.0",
+    "theme_version": "7.0.0",
     "theme_documentation_url": "https://archetypethemes.co/blogs/expanse",
     "theme_support_url": "https://archetypethemes.co/pages/support#expanse"
   },
@@ -377,7 +377,7 @@
         "type": "font_picker",
         "id": "type_header_font_family",
         "label": "t:labels.font",
-        "default": "poppins_n7"
+        "default": "dm_sans_n7"
       },
       {
         "type": "select",
@@ -470,7 +470,7 @@
         "type": "font_picker",
         "id": "type_base_font_family",
         "label": "t:labels.font",
-        "default": "poppins_n5"
+        "default": "dm_sans_n4"
       },
       {
         "type": "select",

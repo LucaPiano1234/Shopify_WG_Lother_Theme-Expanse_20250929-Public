@@ -65,7 +65,7 @@
       "type": "scrolling-text",
       "custom_css": [
         ".scrolling-text {padding: 30px;}",
-        ".scrolling-text--template--22692597498138__scrolling_text_gLazMQ {--move-speed: 1800s;}"
+        ".scrolling-text-template--25387439063425__scrolling_text_9TLpCc {--move-speed: 1000s;}"
       ],
       "name": "t:labels.scrolling_text",
       "settings": {

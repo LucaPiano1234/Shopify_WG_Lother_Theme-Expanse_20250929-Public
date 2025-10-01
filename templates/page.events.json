@@ -562,8 +562,8 @@
             "image_width": 100,
             "image_mask": "none",
             "align_text": "left",
-            "title": "22.03.2025 im Weingut Lother!",
-            "text": "<p>Geführte Weinbergsnachtwanderung in Wipfeld</p><p>Samstag, 22.03.2025 | Start: 18:00 Uhr</p><p>Erleben Sie ein besonderes Weinerlebnis!</p><p>Unsere beliebte Fackelwanderung führt Sie durch die malerischen Wipfelder Weinberge. Dabei präsentiert Ihnen Winemaker Sebastian fünf handverlesene Weine aus einer der renommiertesten Lagen Frankens, dem Wipfelder Zehntgraf. Freuen Sie sich auf spannende Einblicke in die Welt des Weins und erweitern Sie Ihr Weinwissen in einer  einzigartigen Atmosphäre.</p><p>Nach der etwa zweistündigen Wanderung erwartet Sie im<br/>Weingut Lother ein köstliches Abendessen (auch in vegetarischer Variante). Hier lassen wir den Abend in geselliger Runde ausklingen. Für alle, die noch nicht genug haben, steht anschließend die Weinauswahl des Weinguts bereit – genießen<br/>Sie gerne weitere Schoppen vor Ort.</p><p>Wichtig:</p><p>•  Preis: 50 € pro Person</p><p>•  Teilnehmerzahl: Maximal 40 Personen – schnell buchen lohnt sich!</p><p>•  Die Wanderung findet bei jedem Wetter statt.</p><p>Wir freuen uns auf Ihre Teilnahme und einen unvergesslichen<br/>Abend!</p><p>Melden Sie sich unter <a>info@weingut-lother.de</a> oder telefonisch unter 0 93 84 / 18 67 an.</p>",
+            "title": "20.03.2026 im Weingut Lother!",
+            "text": "<p>Geführte Weinbergsnachtwanderung in Wipfeld</p><p>Samstag, 20.03.2026 | Start: 18:00 Uhr</p><p>Erleben Sie ein besonderes Weinerlebnis!</p><p>Unsere beliebte Fackelwanderung führt Sie durch die malerischen Wipfelder Weinberge. Dabei präsentiert Ihnen Winemaker Sebastian fünf handverlesene Weine aus einer der renommiertesten Lagen Frankens, dem Wipfelder Zehntgraf. Freuen Sie sich auf spannende Einblicke in die Welt des Weins und erweitern Sie Ihr Weinwissen in einer  einzigartigen Atmosphäre.</p><p>Nach der etwa zweistündigen Wanderung erwartet Sie im<br/>Weingut Lother ein köstliches Abendessen (auch in vegetarischer Variante). Hier lassen wir den Abend in geselliger Runde ausklingen. Für alle, die noch nicht genug haben, steht anschließend die Weinauswahl des Weinguts bereit – genießen<br/>Sie gerne weitere Schoppen vor Ort.</p><p>Wichtig:</p><p>•  Preis: 50 € pro Person</p><p>•  Teilnehmerzahl: Maximal 40 Personen – schnell buchen lohnt sich!</p><p>•  Die Wanderung findet bei jedem Wetter statt.</p><p>Wir freuen uns auf Ihre Teilnahme und einen unvergesslichen<br/>Abend!</p><p>Melden Sie sich unter <a>info@weingut-lother.de</a> oder telefonisch unter 0 93 84 / 18 67 an.</p>",
             "button_label": "Schreiben Sie uns!",
             "button_link": "mailto:info@weingut-lother.de"
           }
@@ -619,7 +619,7 @@
         ".h4 {font-size: 1.2rem;}"
       ],
       "settings": {
-        "title": "22. März 2025 / Fackelnachtwanderung",
+        "title": "20. März 2026 / Fackelnachtwanderung",
         "per_row": 2,
         "two_per_row_mobile": false,
         "opened": true,
@@ -761,6 +761,9 @@
     "main",
     "slideshow_FeXcWi",
     "rich_text_qVY8Kq",
+    "advanced_accordion_BGYEXQ",
+    "advanced_accordion_jF3hG3",
+    "advanced_accordion_Y8GcWT",
     "advanced_accordion_4JjaGy",
     "advanced_accordion_TDKpwg",
     "advanced_accordion_reKmbi",
@@ -768,11 +771,8 @@
     "advanced_accordion_gJmcN3",
     "advanced_accordion_T7k3e3",
     "rich_text_cBKXgH",
-    "advanced_accordion_Y8GcWT",
     "advanced_accordion_hVcCCe",
-    "advanced_accordion_jF3hG3",
     "advanced_accordion_DYhe4H",
-    "advanced_accordion_BGYEXQ",
     "advanced_accordion_i8qm43",
     "advanced_accordion_B3Vdnq",
     "blog_posts_6f6AK3",

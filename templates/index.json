@@ -63,6 +63,7 @@
     },
     "scrolling_text_9TLpCc": {
       "type": "scrolling-text",
+      "disabled": true,
       "custom_css": [
         ".scrolling-text {padding: 30px;}",
         ".scrolling-text-template--25387439063425__scrolling_text_9TLpCc {--move-speed: 1000s;}"

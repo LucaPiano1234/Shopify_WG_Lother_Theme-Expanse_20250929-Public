@@ -91,6 +91,169 @@
         "divider": false
       }
     },
+    "advanced_accordion_BGYEXQ": {
+      "type": "advanced-accordion",
+      "blocks": {
+        "text_block_g8TK9G": {
+          "type": "text_block",
+          "settings": {
+            "image_width": 100,
+            "image_mask": "none",
+            "align_text": "left",
+            "title": "28.03.2026 im Weingut Lother!",
+            "text": "<p>Geführte Weinbergsnachtwanderung in Wipfeld</p><p>Samstag, 28.03.2026 | Start: 18:00 Uhr</p><p>Erleben Sie ein besonderes Weinerlebnis!</p><p>Unsere beliebte Fackelwanderung führt Sie durch die malerischen Wipfelder Weinberge. Dabei präsentiert Ihnen Winemaker Sebastian fünf handverlesene Weine aus einer der renommiertesten Lagen Frankens, dem Wipfelder Zehntgraf. Freuen Sie sich auf spannende Einblicke in die Welt des Weins und erweitern Sie Ihr Weinwissen in einer  einzigartigen Atmosphäre.</p><p>Nach der etwa zweistündigen Wanderung erwartet Sie im<br/>Weingut Lother ein köstliches Abendessen (auch in vegetarischer Variante). Hier lassen wir den Abend in geselliger Runde ausklingen. Für alle, die noch nicht genug haben, steht anschließend die Weinauswahl des Weinguts bereit – genießen<br/>Sie gerne weitere Schoppen vor Ort.</p><p>Wichtig:</p><p>•  Preis: 50 € pro Person</p><p>•  Teilnehmerzahl: Maximal 40 Personen – schnell buchen lohnt sich!</p><p>•  Die Wanderung findet bei jedem Wetter statt.</p><p>Wir freuen uns auf Ihre Teilnahme und einen unvergesslichen<br/>Abend!</p><p>Melden Sie sich unter <a>info@weingut-lother.de</a> oder telefonisch unter 0 93 84 / 18 67 an.</p>",
+            "button_label": "Schreiben Sie uns!",
+            "button_link": "mailto:info@weingut-lother.de"
+          }
+        },
+        "text_block_3taN6j": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify://shop_images/20240808_Weingut-Fackelnachtwanderung1.jpg",
+            "image_width": 100,
+            "image_mask": "none",
+            "align_text": "left",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_zEJWPd": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify://shop_images/20240808_Weingut-Fackelnachtwanderung3.jpg",
+            "image_width": 100,
+            "image_mask": "none",
+            "align_text": "left",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_i78Mjx": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify://shop_images/20240808_Weingut-Fackelnachtwanderung2.jpg",
+            "image_width": 100,
+            "image_mask": "none",
+            "align_text": "left",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_g8TK9G",
+        "text_block_3taN6j",
+        "text_block_zEJWPd",
+        "text_block_i78Mjx"
+      ],
+      "custom_css": [
+        ".accordion__title h2 {font-size: 1.3rem;}",
+        ".h4 {font-size: 1.2rem;}"
+      ],
+      "settings": {
+        "title": "28. März 2026 / Fackelnachtwanderung",
+        "per_row": 2,
+        "two_per_row_mobile": false,
+        "opened": true,
+        "disabled": false
+      }
+    },
+    "advanced_accordion_jF3hG3": {
+      "type": "advanced-accordion",
+      "blocks": {
+        "text_block_igbmGh": {
+          "type": "text_block",
+          "settings": {
+            "image_width": 100,
+            "image_mask": "none",
+            "align_text": "left",
+            "title": "09. Mai 2026/ Kollektionsverkostung 2026 im Weingut Lother",
+            "text": "<p>Ein Genuss-Event für alle Weinliebhaber!</p><p>16.00 bis 18.00 Uhr</p><p> 🍾 Verkoste unser ganzes<br/>Sortiment mit rund 40 erlesenen Weinen zur Auswahl – von trocken über<br/>halbtrocken bis hin zu lieblich. Ob Sie ein erfahrener Weinliebhaber sind oder<br/>sich einfach inspirieren lassen möchten – bei uns kommen alle Genießer auf ihre<br/>Kosten. Kommen Sie vorbei, genießen Sie die gemütliche Atmosphäre und erleben<br/>Sie genussvolle Momente im Weingut Lother.</p><p>Das erwartet Sie:</p><p>😋 Für das Leibliche Wohl ist bestens gesorgt </p><p>👉 Infos und Vorverkauf unter<br/>Telefon 09384/1867 oder per E-Mail an info@weingut-lother.de</p><p>Kostenbeitrag für die Kollektionsverkostung von 16-18 Uhr:<br/>nur 10 € pro Person im Vorverkauf. Ebenso können die Karten für 12,-€ /<br/>Personen ab 16.00 Uhr vor Ort erworben werden. Bei Ihrem Einkauf ab 24 Flaschen<br/>erhalten Sie 0,30€ / Flasche Rabatt. Ab 36 Flaschen werden zusätzlich 10,-€<br/>Ihrem Weineinkauf gutgeschrieben. (3×0,25l Flaschen zählen als eine Flasche)</p><p>Wir freuen uns auf Ihren Besuch!</p><p>Adresse: Weingut Lother, Birkenstraße 3, 97537 Wipfeld</p><p>___________________________________</p><p></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_YUytgx": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify://shop_images/IMG-20240428-WA0081_1.png",
+            "image_width": 100,
+            "image_mask": "none",
+            "align_text": "left",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_igbmGh",
+        "text_block_YUytgx"
+      ],
+      "custom_css": [
+        ".accordion__title h2 {font-size: 1.3rem;}",
+        ".h4 {font-size: 1.2rem;}"
+      ],
+      "settings": {
+        "title": "09. Mai 2026 / Kollektionsverkostung 2026 im Weingut Lother",
+        "per_row": 2,
+        "two_per_row_mobile": false,
+        "opened": false,
+        "disabled": false
+      }
+    },
+    "advanced_accordion_Y8GcWT": {
+      "type": "advanced-accordion",
+      "blocks": {
+        "text_block_TUJ93m": {
+          "type": "text_block",
+          "settings": {
+            "image_width": 100,
+            "image_mask": "none",
+            "align_text": "left",
+            "title": "07.06.-09.06.25",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_D4EDyk": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify://shop_images/WG_Lother_20240807_Bilder_650x650px-Weinfest_Berlin_05.2025_ff549a06-513d-4ceb-a3f8-34928b27c1a1.png",
+            "image_width": 100,
+            "image_mask": "none",
+            "align_text": "left",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_TUJ93m",
+        "text_block_D4EDyk"
+      ],
+      "custom_css": [
+        ".accordion__title h2 {font-size: 1.3rem;}",
+        ".h4 {font-size: 1.2rem;}"
+      ],
+      "settings": {
+        "title": "07. Juni - 09 Juni 2025 / Weinfest Berlin",
+        "per_row": 2,
+        "two_per_row_mobile": false,
+        "opened": false,
+        "disabled": false
+      }
+    },
     "advanced_accordion_4JjaGy": {
       "type": "advanced-accordion",
       "blocks": {
@@ -373,51 +536,6 @@
         "divider": false
       }
     },
-    "advanced_accordion_Y8GcWT": {
-      "type": "advanced-accordion",
-      "blocks": {
-        "text_block_TUJ93m": {
-          "type": "text_block",
-          "settings": {
-            "image_width": 100,
-            "image_mask": "none",
-            "align_text": "left",
-            "title": "07.06.-09.06.25",
-            "text": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "text_block_D4EDyk": {
-          "type": "text_block",
-          "settings": {
-            "image": "shopify://shop_images/WG_Lother_20240807_Bilder_650x650px-Weinfest_Berlin_05.2025_ff549a06-513d-4ceb-a3f8-34928b27c1a1.png",
-            "image_width": 100,
-            "image_mask": "none",
-            "align_text": "left",
-            "title": "",
-            "text": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_block_TUJ93m",
-        "text_block_D4EDyk"
-      ],
-      "custom_css": [
-        ".accordion__title h2 {font-size: 1.3rem;}",
-        ".h4 {font-size: 1.2rem;}"
-      ],
-      "settings": {
-        "title": "07. Juni - 09 Juni 2025 / Weinfest Berlin",
-        "per_row": 2,
-        "two_per_row_mobile": false,
-        "opened": false,
-        "disabled": false
-      }
-    },
     "advanced_accordion_hVcCCe": {
       "type": "advanced-accordion",
       "blocks": {
@@ -457,51 +575,6 @@
       ],
       "settings": {
         "title": "04. Mai 2025 / Autofreier Sonntag",
-        "per_row": 2,
-        "two_per_row_mobile": false,
-        "opened": false,
-        "disabled": false
-      }
-    },
-    "advanced_accordion_jF3hG3": {
-      "type": "advanced-accordion",
-      "blocks": {
-        "text_block_igbmGh": {
-          "type": "text_block",
-          "settings": {
-            "image_width": 100,
-            "image_mask": "none",
-            "align_text": "left",
-            "title": "09. Mai 2026/ Kollektionsverkostung 2026 im Weingut Lother",
-            "text": "<p>Ein Genuss-Event für alle Weinliebhaber!</p><p>16.00 bis 18.00 Uhr</p><p> 🍾 Verkoste unser ganzes<br/>Sortiment mit rund 40 erlesenen Weinen zur Auswahl – von trocken über<br/>halbtrocken bis hin zu lieblich. Ob Sie ein erfahrener Weinliebhaber sind oder<br/>sich einfach inspirieren lassen möchten – bei uns kommen alle Genießer auf ihre<br/>Kosten. Kommen Sie vorbei, genießen Sie die gemütliche Atmosphäre und erleben<br/>Sie genussvolle Momente im Weingut Lother.</p><p>Das erwartet Sie:</p><p>😋 Für das Leibliche Wohl ist bestens gesorgt </p><p>👉 Infos und Vorverkauf unter<br/>Telefon 09384/1867 oder per E-Mail an info@weingut-lother.de</p><p>Kostenbeitrag für die Kollektionsverkostung von 16-18 Uhr:<br/>nur 10 € pro Person im Vorverkauf. Ebenso können die Karten für 12,-€ /<br/>Personen ab 16.00 Uhr vor Ort erworben werden. Bei Ihrem Einkauf ab 24 Flaschen<br/>erhalten Sie 0,30€ / Flasche Rabatt. Ab 36 Flaschen werden zusätzlich 10,-€<br/>Ihrem Weineinkauf gutgeschrieben. (3×0,25l Flaschen zählen als eine Flasche)</p><p>Wir freuen uns auf Ihren Besuch!</p><p>Adresse: Weingut Lother, Birkenstraße 3, 97537 Wipfeld</p><p>___________________________________</p><p></p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "text_block_YUytgx": {
-          "type": "text_block",
-          "settings": {
-            "image": "shopify://shop_images/IMG-20240428-WA0081_1.png",
-            "image_width": 100,
-            "image_mask": "none",
-            "align_text": "left",
-            "title": "",
-            "text": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_block_igbmGh",
-        "text_block_YUytgx"
-      ],
-      "custom_css": [
-        ".accordion__title h2 {font-size: 1.3rem;}",
-        ".h4 {font-size: 1.2rem;}"
-      ],
-      "settings": {
-        "title": "09. Mai 2026 / Kollektionsverkostung 2026 im Weingut Lother",
         "per_row": 2,
         "two_per_row_mobile": false,
         "opened": false,
@@ -550,79 +623,6 @@
         "per_row": 2,
         "two_per_row_mobile": false,
         "opened": false,
-        "disabled": false
-      }
-    },
-    "advanced_accordion_BGYEXQ": {
-      "type": "advanced-accordion",
-      "blocks": {
-        "text_block_g8TK9G": {
-          "type": "text_block",
-          "settings": {
-            "image_width": 100,
-            "image_mask": "none",
-            "align_text": "left",
-            "title": "20.03.2026 im Weingut Lother!",
-            "text": "<p>Geführte Weinbergsnachtwanderung in Wipfeld</p><p>Samstag, 20.03.2026 | Start: 18:00 Uhr</p><p>Erleben Sie ein besonderes Weinerlebnis!</p><p>Unsere beliebte Fackelwanderung führt Sie durch die malerischen Wipfelder Weinberge. Dabei präsentiert Ihnen Winemaker Sebastian fünf handverlesene Weine aus einer der renommiertesten Lagen Frankens, dem Wipfelder Zehntgraf. Freuen Sie sich auf spannende Einblicke in die Welt des Weins und erweitern Sie Ihr Weinwissen in einer  einzigartigen Atmosphäre.</p><p>Nach der etwa zweistündigen Wanderung erwartet Sie im<br/>Weingut Lother ein köstliches Abendessen (auch in vegetarischer Variante). Hier lassen wir den Abend in geselliger Runde ausklingen. Für alle, die noch nicht genug haben, steht anschließend die Weinauswahl des Weinguts bereit – genießen<br/>Sie gerne weitere Schoppen vor Ort.</p><p>Wichtig:</p><p>•  Preis: 50 € pro Person</p><p>•  Teilnehmerzahl: Maximal 40 Personen – schnell buchen lohnt sich!</p><p>•  Die Wanderung findet bei jedem Wetter statt.</p><p>Wir freuen uns auf Ihre Teilnahme und einen unvergesslichen<br/>Abend!</p><p>Melden Sie sich unter <a>info@weingut-lother.de</a> oder telefonisch unter 0 93 84 / 18 67 an.</p>",
-            "button_label": "Schreiben Sie uns!",
-            "button_link": "mailto:info@weingut-lother.de"
-          }
-        },
-        "text_block_3taN6j": {
-          "type": "text_block",
-          "settings": {
-            "image": "shopify://shop_images/20240808_Weingut-Fackelnachtwanderung1.jpg",
-            "image_width": 100,
-            "image_mask": "none",
-            "align_text": "left",
-            "title": "",
-            "text": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "text_block_zEJWPd": {
-          "type": "text_block",
-          "settings": {
-            "image": "shopify://shop_images/20240808_Weingut-Fackelnachtwanderung3.jpg",
-            "image_width": 100,
-            "image_mask": "none",
-            "align_text": "left",
-            "title": "",
-            "text": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "text_block_i78Mjx": {
-          "type": "text_block",
-          "settings": {
-            "image": "shopify://shop_images/20240808_Weingut-Fackelnachtwanderung2.jpg",
-            "image_width": 100,
-            "image_mask": "none",
-            "align_text": "left",
-            "title": "",
-            "text": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_block_g8TK9G",
-        "text_block_3taN6j",
-        "text_block_zEJWPd",
-        "text_block_i78Mjx"
-      ],
-      "custom_css": [
-        ".accordion__title h2 {font-size: 1.3rem;}",
-        ".h4 {font-size: 1.2rem;}"
-      ],
-      "settings": {
-        "title": "20. März 2026 / Fackelnachtwanderung",
-        "per_row": 2,
-        "two_per_row_mobile": false,
-        "opened": true,
         "disabled": false
       }
     },

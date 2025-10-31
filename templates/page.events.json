@@ -389,6 +389,51 @@
         "disabled": false
       }
     },
+    "advanced_accordion_nqeUzH": {
+      "type": "advanced-accordion",
+      "blocks": {
+        "text_block_mM9jD4": {
+          "type": "text_block",
+          "settings": {
+            "image_width": 100,
+            "image_mask": "none",
+            "align_text": "left",
+            "title": "Fährenfestival Wipfeld – 18. & 19. Juli 2026 ⛴️🍷🌊",
+            "text": "<p><br/><br/>Es ist wieder so weit: Im <strong>zweijährigen Turnus</strong> feiern die Mainfähren der Mainschleife gemeinsam ihr besonderes Fest – und <strong>2026</strong> ist Wipfeld wieder dran!</p><p>Am <strong>18. und 19. Juli</strong> steigt das <strong>Fährenfestival direkt am Fähranleger in Wipfeld</strong>, unmittelbar am Mainufer. Freut euch auf fränkische Lebensfreude, Musik, gute Laune und natürlich feine Weine vom <strong>Weingut Lother</strong>.</p><p>Wir sind mit unserem Weinstand direkt vor Ort und versorgen euch mit frischen Sommerweinen, spritzigen Seccos und eisgekühlten Getränken zum Genießen am Wasser. 🍇🍷✨</p><p>Kommt vorbei, erlebt die besondere Atmosphäre am Fluss und feiert mit uns die Tradition unserer Mainfähren – ein Fest, das es nur alle zwei Jahre gibt!</p><p><strong>Zum Wohl & auf zwei fantastische Festtage in Wipfeld!</strong> 🥂💛</p><p>#weingutlother #wipfeld #fährenfestival #mainschleife #mainfährentradition #frankenwein #weinfest #weinmomente #zumwohl</p>",
+            "button_label": "Video",
+            "button_link": "https://www.facebook.com/reel/1371217354179640"
+          }
+        },
+        "text_block_jD9tB4": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify://shop_images/WG_Lother_20240807_Bilder_650x650px-Weinfest__Juelich.png",
+            "image_width": 100,
+            "image_mask": "none",
+            "align_text": "left",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_mM9jD4",
+        "text_block_jD9tB4"
+      ],
+      "custom_css": [
+        ".accordion__title h2 {font-size: 1.3rem;}",
+        ".h4 {font-size: 1.2rem;}"
+      ],
+      "settings": {
+        "title": "18. und 19. Juli 2026 Fährenfestival in Wipfeld",
+        "per_row": 2,
+        "two_per_row_mobile": false,
+        "opened": false,
+        "disabled": false
+      }
+    },
     "advanced_accordion_KtzqQa": {
       "type": "advanced-accordion",
       "blocks": {
@@ -812,6 +857,7 @@
     "advanced_accordion_4JjaGy",
     "advanced_accordion_AV6nrm",
     "advanced_accordion_TDKpwg",
+    "advanced_accordion_nqeUzH",
     "advanced_accordion_KtzqQa",
     "advanced_accordion_gJmcN3",
     "advanced_accordion_T7k3e3",

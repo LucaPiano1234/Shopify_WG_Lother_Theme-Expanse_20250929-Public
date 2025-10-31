@@ -164,6 +164,96 @@
         "disabled": false
       }
     },
+    "advanced_accordion_hVcCCe": {
+      "type": "advanced-accordion",
+      "blocks": {
+        "text_block_yqWUKR": {
+          "type": "text_block",
+          "settings": {
+            "image_width": 100,
+            "image_mask": "none",
+            "align_text": "left",
+            "title": "Autofreier Sonntag an der Mainschleife – 3. Mai 2026 🚴‍♀️🌿🍇",
+            "text": "<p></p><p>Am <strong>3. Mai 2026</strong> heißt es wieder: freie Fahrt für Radler, Inliner und Spaziergänger! Beim Autofreien Sonntag könnt ihr von <strong>10 bis 18 Uhr</strong> die idyllische Mainlandschaft rund um <strong>Wipfeld</strong> ganz ohne Autoverkehr genießen – perfekt für einen entspannten Aktiv-Tag mit Natur, Bewegung und Genuss.</p><p>Wir, <strong>Diana und Sebastian vom Weingut Lother</strong>, sind auch dieses Jahr wieder mit unserem Weinstand <strong>direkt an der Wipfelder Fähre</strong> für euch da und sorgen für die passende Erfrischung zwischendurch. 🍷☀️</p><p>Genießt fränkische Weine, macht eine wohlverdiente Pause und gönnt euch ein paar gemütliche Momente am Wasser – <strong>Sitzplätze direkt am Mainufer</strong> warten auf euch.</p><p>Wir freuen uns auf euren Besuch und einen genussvollen Tag an der Mainschleife!<br/><br/><strong>Zum Wohl!</strong> 🥂💛</p><p>#weingutlother #wipfeld #autofreiersonntag #mainschleife #frankenwein #genussmoment #radelnundgenießen</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_mXYaiA": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify://shop_images/20240807_Lother_650x650_4.png",
+            "image_width": 100,
+            "image_mask": "none",
+            "align_text": "left",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_yqWUKR",
+        "text_block_mXYaiA"
+      ],
+      "custom_css": [
+        ".accordion__title h2 {font-size: 1.3rem;}",
+        ".h4 {font-size: 1.2rem;}"
+      ],
+      "settings": {
+        "title": "03. Mai 2026 / Autofreier Sonntag",
+        "per_row": 2,
+        "two_per_row_mobile": false,
+        "opened": false,
+        "disabled": false
+      }
+    },
+    "advanced_accordion_DYhe4H": {
+      "type": "advanced-accordion",
+      "blocks": {
+        "text_block_GMy4qf": {
+          "type": "text_block",
+          "settings": {
+            "image_width": 100,
+            "image_mask": "none",
+            "align_text": "left",
+            "title": "📍 Fischmarkt Schweinfurt Marktplatz 🍷🐟",
+            "text": "<p>Wir läuten die neue <strong>Weinfestsaison 2026</strong> ein – wie immer beim <strong>Fischmarkt in Schweinfurt</strong>, diesmal schon im <strong>März</strong>! 🍷🐟</p><p>Wir sind <strong>Diana und Sebastian Lother</strong> vom <strong>Weingut Lother aus Wipfeld</strong> und bringen unsere Weine aus einer der <strong>Top-5-Lagen Frankens</strong> direkt zu euch nach Schweinfurt.<br/><br/>Ob fruchtig, frisch, mineralisch oder kräftig – wir haben garantiert den richtigen Wein dabei!</p><p>Und falls der Frühling dieses Jahr noch ein wenig Anlauf braucht:<br/><br/><strong>Keine Sorge – wir haben auch Glühwein dabei!</strong> 🔥🍷😉</p><p>📍 <strong>Fischmarkt Schweinfurt Marktplatz</strong><br/><br/>Kommt vorbei, probiert euch durch unsere Weine und startet mit uns in eine genussvolle Saison!<br/><br/>Zum Wohl & bis bald in Schweinfurt 🥂</p><p>#weingutlother #schweinfurt #fischmarkt #frankenwein #weinfestsaison #wipfeld #weingenuss #glühweinzeit</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_VFPMqr": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify://shop_images/WG_Lother_20240807_Bilder_650x650px-Fischmarkt_in_Schweinfurt.jpg",
+            "image_width": 100,
+            "image_mask": "none",
+            "align_text": "left",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_GMy4qf",
+        "text_block_VFPMqr"
+      ],
+      "custom_css": [
+        ".accordion__title h2 {font-size: 1.3rem;}",
+        ".h4 {font-size: 1.2rem;}"
+      ],
+      "settings": {
+        "title": "19. März - 23. März 2026 / Fischmarkt in Schweinfurt",
+        "per_row": 2,
+        "two_per_row_mobile": false,
+        "opened": false,
+        "disabled": false
+      }
+    },
     "advanced_accordion_jF3hG3": {
       "type": "advanced-accordion",
       "blocks": {
@@ -569,6 +659,31 @@
         "disabled": false
       }
     },
+    "rich_text_cBKXgH": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_yzUwPA": {
+          "type": "heading",
+          "settings": {
+            "title": "Unsere vergangenen Veranstaltungen:",
+            "heading_size": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "heading_yzUwPA"
+      ],
+      "custom_css": [
+        "{background: url(\"https://cdn.shopify.com/s/files/1/0869/7416/9370/files/23.png?v=1722586845\") no-repeat center; background-size: cover;}",
+        ".index-section:not(.index-section--sub-product):first-child {margin-top: 0; padding-top: var(--indexSectionPadding); padding-bottom: 30px;"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
     "advanced_accordion_reKmbi": {
       "type": "advanced-accordion",
       "blocks": {
@@ -596,121 +711,6 @@
       "settings": {
         "title": "04. Juli - 06. Juli 2025 / Wein am Main in Wipfeld",
         "per_row": 1,
-        "two_per_row_mobile": false,
-        "opened": false,
-        "disabled": false
-      }
-    },
-    "rich_text_cBKXgH": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_yzUwPA": {
-          "type": "heading",
-          "settings": {
-            "title": "Unsere vergangenen Veranstaltungen:",
-            "heading_size": "h3"
-          }
-        }
-      },
-      "block_order": [
-        "heading_yzUwPA"
-      ],
-      "custom_css": [
-        "{background: url(\"https://cdn.shopify.com/s/files/1/0869/7416/9370/files/23.png?v=1722586845\") no-repeat center; background-size: cover;}",
-        ".index-section:not(.index-section--sub-product):first-child {margin-top: 0; padding-top: var(--indexSectionPadding); padding-bottom: 30px;"
-      ],
-      "settings": {
-        "align_text": "center",
-        "narrow_column": true,
-        "color_scheme": "none",
-        "divider": false
-      }
-    },
-    "advanced_accordion_hVcCCe": {
-      "type": "advanced-accordion",
-      "blocks": {
-        "text_block_yqWUKR": {
-          "type": "text_block",
-          "settings": {
-            "image_width": 100,
-            "image_mask": "none",
-            "align_text": "left",
-            "title": "Autofreier Sonntag an der Mainschleife – 3. Mai 2026 🚴‍♀️🌿🍇",
-            "text": "<p></p><p>Am <strong>3. Mai 2026</strong> heißt es wieder: freie Fahrt für Radler, Inliner und Spaziergänger! Beim Autofreien Sonntag könnt ihr von <strong>10 bis 18 Uhr</strong> die idyllische Mainlandschaft rund um <strong>Wipfeld</strong> ganz ohne Autoverkehr genießen – perfekt für einen entspannten Aktiv-Tag mit Natur, Bewegung und Genuss.</p><p>Wir, <strong>Diana und Sebastian vom Weingut Lother</strong>, sind auch dieses Jahr wieder mit unserem Weinstand <strong>direkt an der Wipfelder Fähre</strong> für euch da und sorgen für die passende Erfrischung zwischendurch. 🍷☀️</p><p>Genießt fränkische Weine, macht eine wohlverdiente Pause und gönnt euch ein paar gemütliche Momente am Wasser – <strong>Sitzplätze direkt am Mainufer</strong> warten auf euch.</p><p>Wir freuen uns auf euren Besuch und einen genussvollen Tag an der Mainschleife!<br/><br/><strong>Zum Wohl!</strong> 🥂💛</p><p>#weingutlother #wipfeld #autofreiersonntag #mainschleife #frankenwein #genussmoment #radelnundgenießen</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "text_block_mXYaiA": {
-          "type": "text_block",
-          "settings": {
-            "image": "shopify://shop_images/20240807_Lother_650x650_4.png",
-            "image_width": 100,
-            "image_mask": "none",
-            "align_text": "left",
-            "title": "",
-            "text": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_block_yqWUKR",
-        "text_block_mXYaiA"
-      ],
-      "custom_css": [
-        ".accordion__title h2 {font-size: 1.3rem;}",
-        ".h4 {font-size: 1.2rem;}"
-      ],
-      "settings": {
-        "title": "03. Mai 2026 / Autofreier Sonntag",
-        "per_row": 2,
-        "two_per_row_mobile": false,
-        "opened": false,
-        "disabled": false
-      }
-    },
-    "advanced_accordion_DYhe4H": {
-      "type": "advanced-accordion",
-      "blocks": {
-        "text_block_GMy4qf": {
-          "type": "text_block",
-          "settings": {
-            "image_width": 100,
-            "image_mask": "none",
-            "align_text": "left",
-            "title": "📍 Fischmarkt Schweinfurt Marktplatz 🍷🐟",
-            "text": "<p>Wir läuten die neue <strong>Weinfestsaison 2026</strong> ein – wie immer beim <strong>Fischmarkt in Schweinfurt</strong>, diesmal schon im <strong>März</strong>! 🍷🐟</p><p>Wir sind <strong>Diana und Sebastian Lother</strong> vom <strong>Weingut Lother aus Wipfeld</strong> und bringen unsere Weine aus einer der <strong>Top-5-Lagen Frankens</strong> direkt zu euch nach Schweinfurt.<br/><br/>Ob fruchtig, frisch, mineralisch oder kräftig – wir haben garantiert den richtigen Wein dabei!</p><p>Und falls der Frühling dieses Jahr noch ein wenig Anlauf braucht:<br/><br/><strong>Keine Sorge – wir haben auch Glühwein dabei!</strong> 🔥🍷😉</p><p>📍 <strong>Fischmarkt Schweinfurt Marktplatz</strong><br/><br/>Kommt vorbei, probiert euch durch unsere Weine und startet mit uns in eine genussvolle Saison!<br/><br/>Zum Wohl & bis bald in Schweinfurt 🥂</p><p>#weingutlother #schweinfurt #fischmarkt #frankenwein #weinfestsaison #wipfeld #weingenuss #glühweinzeit</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "text_block_VFPMqr": {
-          "type": "text_block",
-          "settings": {
-            "image": "shopify://shop_images/WG_Lother_20240807_Bilder_650x650px-Fischmarkt_in_Schweinfurt.jpg",
-            "image_width": 100,
-            "image_mask": "none",
-            "align_text": "left",
-            "title": "",
-            "text": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_block_GMy4qf",
-        "text_block_VFPMqr"
-      ],
-      "custom_css": [
-        ".accordion__title h2 {font-size: 1.3rem;}",
-        ".h4 {font-size: 1.2rem;}"
-      ],
-      "settings": {
-        "title": "19. April - 23. März 2026 / Fischmarkt in Schweinfurt",
-        "per_row": 2,
         "two_per_row_mobile": false,
         "opened": false,
         "disabled": false
@@ -852,6 +852,8 @@
     "slideshow_FeXcWi",
     "rich_text_qVY8Kq",
     "advanced_accordion_BGYEXQ",
+    "advanced_accordion_DYhe4H",
+    "advanced_accordion_hVcCCe",
     "advanced_accordion_jF3hG3",
     "advanced_accordion_Y8GcWT",
     "advanced_accordion_4JjaGy",
@@ -861,10 +863,8 @@
     "advanced_accordion_KtzqQa",
     "advanced_accordion_gJmcN3",
     "advanced_accordion_T7k3e3",
-    "advanced_accordion_reKmbi",
     "rich_text_cBKXgH",
-    "advanced_accordion_hVcCCe",
-    "advanced_accordion_DYhe4H",
+    "advanced_accordion_reKmbi",
     "advanced_accordion_i8qm43",
     "advanced_accordion_B3Vdnq",
     "blog_posts_6f6AK3",

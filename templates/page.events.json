@@ -299,6 +299,51 @@
         "disabled": false
       }
     },
+    "advanced_accordion_AV6nrm": {
+      "type": "advanced-accordion",
+      "blocks": {
+        "text_block_GDRqDn": {
+          "type": "text_block",
+          "settings": {
+            "image_width": 100,
+            "image_mask": "none",
+            "align_text": "left",
+            "title": "Lauben Vibes – Wein, Musik & Wipfelder Lebensgefühl 🍇🎶✨",
+            "text": "<p><br/><br/>Am <strong>13. Juni 2026</strong> feiern wir erstmals die <strong>Lauben Vibes</strong> in den Wipfelder Weinbergen – und wir sind natürlich mit unseren Weinen mitten im Geschehen dabei!</p><p>Genießt mit uns einen entspannten Tag <strong>direkt an unserer Weinlaube</strong> zwischen Reben und traumhafter Aussicht. Euch erwartet:<br/><br/>🌿 Weinberge pur<br/><br/>🍷 unsere fränkischen Weine vom Weingut Lother<br/><br/>🎶 chillige Musik & entspannte Atmosphäre<br/><br/>☀️ Sommerfeeling mit Blick über Wipfeld</p><p>Ob in der Sonne oder in einer schattigen Ecke im Weinberg – lasst euch ein Glas einschenken, lehnt euch zurück und genießt die einzigartige Stimmung am Berg.</p><p>Wir freuen uns riesig auf diesen neuen Event und auf ein wunderschönes Genuss-Erlebnis mit euch!<br/><br/><strong>Zum Wohl & bis zur Laube!</strong> 🥂💛</p><p>#weingutlother #laubenvibes #wipfeld #weinberge #frankenwein #weingenuss #weinmomente #sommerfeeling</p>",
+            "button_label": "Video",
+            "button_link": "https://www.facebook.com/reel/1111025780792462"
+          }
+        },
+        "text_block_RxbwRD": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Bild_2024-09-03_um_13.36.19_3c1973a7.jpg",
+            "image_width": 100,
+            "image_mask": "none",
+            "align_text": "left",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_GDRqDn",
+        "text_block_RxbwRD"
+      ],
+      "custom_css": [
+        ".accordion__title h2 {font-size: 1.3rem;}",
+        ".h4 {font-size: 1.2rem;}"
+      ],
+      "settings": {
+        "title": "13.Juni.2026 / LaubenVibes in den Wipfelder Weinbergen",
+        "per_row": 2,
+        "two_per_row_mobile": false,
+        "opened": false,
+        "disabled": false
+      }
+    },
     "advanced_accordion_TDKpwg": {
       "type": "advanced-accordion",
       "blocks": {
@@ -339,38 +384,6 @@
       "settings": {
         "title": "09. Juli - 12. Juli 2026 / Weinfest in Jülich",
         "per_row": 2,
-        "two_per_row_mobile": false,
-        "opened": false,
-        "disabled": false
-      }
-    },
-    "advanced_accordion_reKmbi": {
-      "type": "advanced-accordion",
-      "blocks": {
-        "text_block_tTbDJP": {
-          "type": "text_block",
-          "settings": {
-            "image": "shopify://shop_images/Banner_Quer.jpg",
-            "image_width": 70,
-            "image_mask": "none",
-            "align_text": "left",
-            "title": "🍷 Wein am Main – Dein Sommer direkt am Fluss! 🌅",
-            "text": "<p><strong>04.–06. Juli 2025 | Wipfeld am Fähranleger</strong></p><p>Erlebe drei Tage voller Genuss, Musik und guter Laune – direkt am idyllischen Mainufer in Wipfeld! Unser Weinfest bringt euch mediterranes Lebensgefühl, fränkischen Wein und das perfekte Ambiente für laue Sommerabende.</p><p>✨ <strong>Das erwartet dich:</strong><br/><br/>📅 <strong>Freitag, 04.07.</strong> – <em>Italian Vibes & Latin Nights</em> 🇮🇹💃<br/><br/>📅 <strong>Samstag, 05.07.</strong> – Live-Act der 90er: <strong>BUDDY</strong> mit seinem Hit <em>„Ab in den Süden“</em>! 🎤☀️<br/><br/>📅 <strong>Sonntag, 06.07.</strong> – <em>Frühschoppen mit Mittagstisch</em>: Spanferkel & Schaschlik 🍖🍽️</p><p>🥂 Genieße die Weine vom <strong>Weingut Lother</strong> in einzigartiger Atmosphäre,  direkt am Wasser.</p><p>🎉 <strong>Alle Tage Eintritt frei</strong> – komm vorbei, stoß mit uns an und erlebe ein Wochenende voller Genuss und Sommerfeeling!</p><p>📍 Veranstaltungsort: Direkt am Fähranleger, Wipfeld am Main</p><p>#weinammain #weingutlother #wipfeld #mainufer #weinfest #frankenwein #buddy #latinonight #frühschoppen #sommergenuss #abindensüden</p>",
-            "button_label": "",
-            "button_link": "https://www.facebook.com/reel/1371217354179640"
-          }
-        }
-      },
-      "block_order": [
-        "text_block_tTbDJP"
-      ],
-      "custom_css": [
-        ".accordion__title h2 {font-size: 1.3rem;}",
-        ".h4 {font-size: 1.2rem;}"
-      ],
-      "settings": {
-        "title": "04. Juli - 06. Juli 2025 / Wein am Main in Wipfeld",
-        "per_row": 1,
         "two_per_row_mobile": false,
         "opened": false,
         "disabled": false
@@ -506,6 +519,38 @@
       "settings": {
         "title": "29. - 31. August 2026 / Weinfest in Melsungen",
         "per_row": 2,
+        "two_per_row_mobile": false,
+        "opened": false,
+        "disabled": false
+      }
+    },
+    "advanced_accordion_reKmbi": {
+      "type": "advanced-accordion",
+      "blocks": {
+        "text_block_tTbDJP": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify://shop_images/Banner_Quer.jpg",
+            "image_width": 70,
+            "image_mask": "none",
+            "align_text": "left",
+            "title": "🍷 Wein am Main – Dein Sommer direkt am Fluss! 🌅",
+            "text": "<p><strong>04.–06. Juli 2025 | Wipfeld am Fähranleger</strong></p><p>Erlebe drei Tage voller Genuss, Musik und guter Laune – direkt am idyllischen Mainufer in Wipfeld! Unser Weinfest bringt euch mediterranes Lebensgefühl, fränkischen Wein und das perfekte Ambiente für laue Sommerabende.</p><p>✨ <strong>Das erwartet dich:</strong><br/><br/>📅 <strong>Freitag, 04.07.</strong> – <em>Italian Vibes & Latin Nights</em> 🇮🇹💃<br/><br/>📅 <strong>Samstag, 05.07.</strong> – Live-Act der 90er: <strong>BUDDY</strong> mit seinem Hit <em>„Ab in den Süden“</em>! 🎤☀️<br/><br/>📅 <strong>Sonntag, 06.07.</strong> – <em>Frühschoppen mit Mittagstisch</em>: Spanferkel & Schaschlik 🍖🍽️</p><p>🥂 Genieße die Weine vom <strong>Weingut Lother</strong> in einzigartiger Atmosphäre,  direkt am Wasser.</p><p>🎉 <strong>Alle Tage Eintritt frei</strong> – komm vorbei, stoß mit uns an und erlebe ein Wochenende voller Genuss und Sommerfeeling!</p><p>📍 Veranstaltungsort: Direkt am Fähranleger, Wipfeld am Main</p><p>#weinammain #weingutlother #wipfeld #mainufer #weinfest #frankenwein #buddy #latinonight #frühschoppen #sommergenuss #abindensüden</p>",
+            "button_label": "",
+            "button_link": "https://www.facebook.com/reel/1371217354179640"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_tTbDJP"
+      ],
+      "custom_css": [
+        ".accordion__title h2 {font-size: 1.3rem;}",
+        ".h4 {font-size: 1.2rem;}"
+      ],
+      "settings": {
+        "title": "04. Juli - 06. Juli 2025 / Wein am Main in Wipfeld",
+        "per_row": 1,
         "two_per_row_mobile": false,
         "opened": false,
         "disabled": false
@@ -765,11 +810,12 @@
     "advanced_accordion_jF3hG3",
     "advanced_accordion_Y8GcWT",
     "advanced_accordion_4JjaGy",
+    "advanced_accordion_AV6nrm",
     "advanced_accordion_TDKpwg",
-    "advanced_accordion_reKmbi",
     "advanced_accordion_KtzqQa",
     "advanced_accordion_gJmcN3",
     "advanced_accordion_T7k3e3",
+    "advanced_accordion_reKmbi",
     "rich_text_cBKXgH",
     "advanced_accordion_hVcCCe",
     "advanced_accordion_DYhe4H",

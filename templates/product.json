@@ -88,6 +88,10 @@
             "show_gift_card_recipient": false
           }
         },
+        "hextom_shipping_bar_fsb_custom_placement_qhd4Kg": {
+          "type": "shopify://apps/hextom-shipping-bar/blocks/fsb-custom-placement/7ef5d9af-75a2-45c7-9b1b-f9240ee488e9",
+          "settings": {}
+        },
         "complementary_products_ciYXpc": {
           "type": "complementary_products",
           "disabled": true,
@@ -113,6 +117,7 @@
         "sales_point_nJTyMC",
         "sales_point_dwQVfQ",
         "buy_buttons",
+        "hextom_shipping_bar_fsb_custom_placement_qhd4Kg",
         "complementary_products_ciYXpc"
       ],
       "settings": {

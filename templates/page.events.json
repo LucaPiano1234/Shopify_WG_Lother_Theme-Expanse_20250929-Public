@@ -88,7 +88,7 @@
         "align_text": "center",
         "narrow_column": true,
         "color_scheme": "none",
-        "divider": false
+        "divider": true
       }
     },
     "advanced_accordion_BGYEXQ": {
@@ -164,51 +164,6 @@
         "disabled": false
       }
     },
-    "advanced_accordion_hVcCCe": {
-      "type": "advanced-accordion",
-      "blocks": {
-        "text_block_yqWUKR": {
-          "type": "text_block",
-          "settings": {
-            "image_width": 100,
-            "image_mask": "none",
-            "align_text": "left",
-            "title": "Autofreier Sonntag an der Mainschleife – 3. Mai 2026 🚴‍♀️🌿🍇",
-            "text": "<p></p><p>Am <strong>3. Mai 2026</strong> heißt es wieder: freie Fahrt für Radler, Inliner und Spaziergänger! Beim Autofreien Sonntag könnt ihr von <strong>10 bis 18 Uhr</strong> die idyllische Mainlandschaft rund um <strong>Wipfeld</strong> ganz ohne Autoverkehr genießen – perfekt für einen entspannten Aktiv-Tag mit Natur, Bewegung und Genuss.</p><p>Wir, <strong>Diana und Sebastian vom Weingut Lother</strong>, sind auch dieses Jahr wieder mit unserem Weinstand <strong>direkt an der Wipfelder Fähre</strong> für euch da und sorgen für die passende Erfrischung zwischendurch. 🍷☀️</p><p>Genießt fränkische Weine, macht eine wohlverdiente Pause und gönnt euch ein paar gemütliche Momente am Wasser – <strong>Sitzplätze direkt am Mainufer</strong> warten auf euch.</p><p>Wir freuen uns auf euren Besuch und einen genussvollen Tag an der Mainschleife!<br/><br/><strong>Zum Wohl!</strong> 🥂💛</p><p>#weingutlother #wipfeld #autofreiersonntag #mainschleife #frankenwein #genussmoment #radelnundgenießen</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "text_block_mXYaiA": {
-          "type": "text_block",
-          "settings": {
-            "image": "shopify://shop_images/20240807_Lother_650x650_4.png",
-            "image_width": 100,
-            "image_mask": "none",
-            "align_text": "left",
-            "title": "",
-            "text": "",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "text_block_yqWUKR",
-        "text_block_mXYaiA"
-      ],
-      "custom_css": [
-        ".accordion__title h2 {font-size: 1.3rem;}",
-        ".h4 {font-size: 1.2rem;}"
-      ],
-      "settings": {
-        "title": "03. Mai 2026 / Autofreier Sonntag",
-        "per_row": 2,
-        "two_per_row_mobile": false,
-        "opened": false,
-        "disabled": false
-      }
-    },
     "advanced_accordion_DYhe4H": {
       "type": "advanced-accordion",
       "blocks": {
@@ -248,6 +203,51 @@
       ],
       "settings": {
         "title": "19. März - 23. März 2026 / Fischmarkt in Schweinfurt",
+        "per_row": 2,
+        "two_per_row_mobile": false,
+        "opened": false,
+        "disabled": false
+      }
+    },
+    "advanced_accordion_hVcCCe": {
+      "type": "advanced-accordion",
+      "blocks": {
+        "text_block_yqWUKR": {
+          "type": "text_block",
+          "settings": {
+            "image_width": 100,
+            "image_mask": "none",
+            "align_text": "left",
+            "title": "Autofreier Sonntag an der Mainschleife – 3. Mai 2026 🚴‍♀️🌿🍇",
+            "text": "<p></p><p>Am <strong>3. Mai 2026</strong> heißt es wieder: freie Fahrt für Radler, Inliner und Spaziergänger! Beim Autofreien Sonntag könnt ihr von <strong>10 bis 18 Uhr</strong> die idyllische Mainlandschaft rund um <strong>Wipfeld</strong> ganz ohne Autoverkehr genießen – perfekt für einen entspannten Aktiv-Tag mit Natur, Bewegung und Genuss.</p><p>Wir, <strong>Diana und Sebastian vom Weingut Lother</strong>, sind auch dieses Jahr wieder mit unserem Weinstand <strong>direkt an der Wipfelder Fähre</strong> für euch da und sorgen für die passende Erfrischung zwischendurch. 🍷☀️</p><p>Genießt fränkische Weine, macht eine wohlverdiente Pause und gönnt euch ein paar gemütliche Momente am Wasser – <strong>Sitzplätze direkt am Mainufer</strong> warten auf euch.</p><p>Wir freuen uns auf euren Besuch und einen genussvollen Tag an der Mainschleife!<br/><br/><strong>Zum Wohl!</strong> 🥂💛</p><p>#weingutlother #wipfeld #autofreiersonntag #mainschleife #frankenwein #genussmoment #radelnundgenießen</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_mXYaiA": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify://shop_images/20240807_Lother_650x650_4.png",
+            "image_width": 100,
+            "image_mask": "none",
+            "align_text": "left",
+            "title": "",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_yqWUKR",
+        "text_block_mXYaiA"
+      ],
+      "custom_css": [
+        ".accordion__title h2 {font-size: 1.3rem;}",
+        ".h4 {font-size: 1.2rem;}"
+      ],
+      "settings": {
+        "title": "03. Mai 2026 / Autofreier Sonntag",
         "per_row": 2,
         "two_per_row_mobile": false,
         "opened": false,

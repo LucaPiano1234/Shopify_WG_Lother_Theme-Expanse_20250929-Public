@@ -681,7 +681,7 @@
         "align_text": "center",
         "narrow_column": true,
         "color_scheme": "none",
-        "divider": false
+        "divider": true
       }
     },
     "advanced_accordion_reKmbi": {

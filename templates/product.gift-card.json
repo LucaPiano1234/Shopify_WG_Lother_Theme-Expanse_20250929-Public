@@ -1,1 +1,127 @@
-{"sections":{"main":{"type":"main-product","blocks":{"price":{"type":"price","settings":{}},"quantity_selector":{"type":"quantity_selector","settings":{}},"buy_buttons":{"type":"buy_buttons","settings":{}},"description":{"type":"description","settings":{}},"variant_picker":{"type":"variant_picker","settings":{}},"inventory_status":{"type":"inventory_status","settings":{}},"share":{"type":"share","settings":{}},"sales_point":{"type":"sales_point","settings":{}},"tab":{"type":"tab","settings":{}},"text":{"type":"text","settings":{}},"separator":{"type":"separator","settings":{}},"contact":{"type":"contact","settings":{}}},"block_order":["description","separator","variant_picker","buy_buttons","share"],"settings":{}},"sub":{"type":"product-full-width","disabled":true,"settings":{}},"recently-viewed":{"type":"recently-viewed","disabled":true,"settings":{}}},"order":["main","sub","recently-viewed"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {}
+        },
+        "quantity_selector_BwhMiP": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "price_CErtPR": {
+          "type": "price",
+          "settings": {}
+        },
+        "custom_kctccL": {
+          "type": "custom",
+          "settings": {
+            "code": "<img src=\"https://cdn.shopify.com/s/files/1/0869/7416/9370/files/Untitled_design_12.png?v=1728654189\" width=\"500\" height=\"600\">"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "sales_point_EfJaCF": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "package",
+            "text": "Kostenloser Versand ab 18 Flaschen"
+          }
+        },
+        "sales_point_Qh3DeE": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "heart",
+            "text": "Typisch fränkisch"
+          }
+        },
+        "sales_point_xDtDY7": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "ribbon",
+            "text": "Mehrfach ausgezeichnet bei der Fränkischen Weinprämierung"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "description",
+        "separator",
+        "quantity_selector_BwhMiP",
+        "price_CErtPR",
+        "custom_kctccL",
+        "variant_picker",
+        "sales_point_EfJaCF",
+        "sales_point_Qh3DeE",
+        "sales_point_xDtDY7",
+        "buy_buttons",
+        "share"
+      ],
+      "settings": {
+        "image_position": "left",
+        "image_container_size": "medium",
+        "product_image_size": "square",
+        "product_zoom_enable": true,
+        "thumbnail_position": "beside",
+        "thumbnail_height": "flexible",
+        "thumbnail_arrows": false,
+        "mobile_layout": "partial",
+        "enable_video_looping": true,
+        "product_video_style": "muted"
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "recently-viewed"
+  ]
+}

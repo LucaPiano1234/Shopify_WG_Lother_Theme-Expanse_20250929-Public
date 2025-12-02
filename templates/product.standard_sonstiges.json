@@ -177,7 +177,7 @@
           "type": "text",
           "settings": {
             "enlarge_text": false,
-            "text": "{{ product.metafields.custom.langbeschreibung | metafield_tag }}"
+            "text": "{{ product.description }}"
           }
         }
       },
@@ -247,6 +247,7 @@
         "tab",
         "tab_aPXDC8"
       ],
+      "disabled": true,
       "settings": {
         "max_width": true
       }
@@ -281,27 +282,6 @@
         "products_per_row": 3
       }
     },
-    "hero_video_U6FYqk": {
-      "type": "hero-video",
-      "settings": {
-        "full_width": true,
-        "title": "Weingut Lother",
-        "title_size": 70,
-        "subheading": "Seit Generationen mit Herz & Verstand",
-        "link_text": "Mehr über uns",
-        "link": "shopify://pages/uber-uns",
-        "color_accent": "rgba(0,0,0,0)",
-        "text_align": "vertical-center horizontal-center",
-        "video_url": "https://www.youtube.com/watch?v=Zho26K7kUKE",
-        "overlay_opacity": 0,
-        "height": 650,
-        "height_mobile": 300
-      }
-    },
-    "recently-viewed": {
-      "type": "recently-viewed",
-      "settings": {}
-    },
     "more-products-vendor": {
       "type": "more-products-vendor",
       "disabled": true,
@@ -317,6 +297,23 @@
         "title": "",
         "video_url": "https://www.youtube.com/watch?v=Zho26K7kUKE",
         "divider": false
+      }
+    },
+    "hero_video_U6FYqk": {
+      "type": "hero-video",
+      "settings": {
+        "full_width": true,
+        "title": "Weingut Lother",
+        "title_size": 70,
+        "subheading": "Seit Generationen mit Herz & Verstand",
+        "link_text": "Mehr über uns",
+        "link": "shopify://pages/uber-uns",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "video_url": "https://www.youtube.com/watch?v=Zho26K7kUKE",
+        "overlay_opacity": 0,
+        "height": 650,
+        "height_mobile": 300
       }
     },
     "more-products-collection": {
@@ -405,6 +402,10 @@
         "top_padding": true,
         "bottom_padding": true
       }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {}
     },
     "featured_product_Yh4Lhf": {
       "type": "featured-product",

@@ -84,6 +84,7 @@
         },
         "complementary_products_ciYXpc": {
           "type": "complementary_products",
+          "disabled": true,
           "settings": {
             "product_complementary_heading": "Dürfen wir Ihre Bestellung als Geschenk einpacken?",
             "complementary_count": 4,

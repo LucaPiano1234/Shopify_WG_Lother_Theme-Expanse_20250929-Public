@@ -73,7 +73,7 @@
         "complementary_products_qaedkd": {
           "type": "complementary_products",
           "settings": {
-            "product_complementary_heading": "Pairs well with",
+            "product_complementary_heading": "Dürfen wir Ihre Bestellung als Geschenk einpacken?",
             "complementary_count": 4,
             "per_slide": 2,
             "control_type": "dots",

@@ -25,7 +25,7 @@
   assign show_controls = show_controls | default: section.settings.show_controls, allow_false: true | default: false, allow_false: true
   assign muted = muted | default: section.settings.muted, allow_false: true | default: false, allow_false: true
   assign background = background | default: section.settings.background, allow_false: true | default: false, allow_false: true
-  assign media_crop = media_crop | default: section.settings.media_crop | default: 'square'
+  assign media_crop = media_crop | default: section.settings.media_crop | default: '1.0'
   assign hydration = hydration | default: 'on:idle'
 
   if external_video != blank
@@ -33,9 +33,6 @@
     assign external_video_id = external_video.external_id | default: external_video.id
   endif
 %}
-<div style="background: red; color: white; z-index: 9999; position: relative;">
-  DEBUG: Crop is {{ media_crop }}
-</div>
 <is-land {{ hydration }}>
   <div
     class="video-media aspect-ratio--{{ media_crop }}"

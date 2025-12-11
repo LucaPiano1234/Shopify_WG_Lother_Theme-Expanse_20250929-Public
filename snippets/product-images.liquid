@@ -73,6 +73,13 @@
                 assign animation = 'none'
               endif
             %}
+            {%- liquid
+              # FIX: Wenn Video, dann erzwinge 1:1 (square), sonst nimm Theme-Einstellung
+              assign current_media_crop = image_size
+              if media.media_type == 'video' or media.media_type == 'external_video'
+                assign current_media_crop = 'square'
+              endif
+            -%}
             {%- render 'media',
               media: media,
               featured_media: featured_media,
@@ -82,7 +89,9 @@
               sizeVariable: sizeVariable,
               fallback: fallback,
               loading: loading,
-              animation: animation
+              animation: animation,
+              media_crop: current_media_crop,
+              image_size: current_media_crop
             -%}
           {%- endfor -%}
         </div>

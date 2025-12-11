@@ -182,12 +182,18 @@
       {%- if has_video -%}
         <div class="product__video-wrapper">
           {%- if media.media_type == 'video' -%}
-            {%- render 'video-media', video: media, hydration: 'on:interaction="select"', autoplay: autoplay -%}
+            {%- render 'video-media',
+              video: media,
+              hydration: 'on:interaction="select"',
+              autoplay: autoplay,
+              media_crop: 'square'
+            -%}
           {%- elsif media.media_type == 'external_video' -%}
             {%- render 'video-media',
               external_video: media,
               hydration: 'on:interaction="select"',
-              autoplay: autoplay
+              autoplay: autoplay,
+              media_crop: 'square'
             -%}
           {%- endif -%}
         </div>

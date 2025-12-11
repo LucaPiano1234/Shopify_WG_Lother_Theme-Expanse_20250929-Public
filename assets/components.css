@@ -16227,6 +16227,8 @@ form + .footer__social {
 }
 
 video-media {
+  --default-aspect-ratio: 1 / 1;
+
   display: block;
   position: relative;
   height: 100%;

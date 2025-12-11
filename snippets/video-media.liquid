@@ -33,7 +33,9 @@
     assign external_video_id = external_video.external_id | default: external_video.id
   endif
 %}
-
+<div style="background: red; color: white; z-index: 9999; position: relative;">
+  DEBUG: Crop is {{ media_crop }}
+</div>
 <is-land {{ hydration }}>
   <div
     class="video-media aspect-ratio--{{ media_crop }}"
